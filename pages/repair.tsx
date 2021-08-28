@@ -54,7 +54,7 @@ export default function Repair() {
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.paper} elevation={0}>
-              <Typography variant="h2" align="center">
+              <Typography variant="h2" align="center" gutterBottom>
                 MALWARE DETECTED
               </Typography>
               <Typography
