@@ -95,7 +95,7 @@ export default function Home() {
       <div className={classes.wrapper}>
         <Grid container spacing={2} className={classes.content}>
           <Grid item xs={12}>
-            <Image src={content.icon} />
+            <Image src={content.icon} alt={content.title} />
           </Grid>
           <Grid item xs={12}>
             <LinearProgress variant="determinate" value={progress} />

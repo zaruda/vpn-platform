@@ -18,24 +18,6 @@ import ReparedIcon from '../public/images/repared.svg';
 import CheckIcon from '../public/images/Check.svg';
 import ArrowClockwise from '../public/images/ArrowClockwise.svg';
 
-// const createListItem = ({
-//   icon: Icon,
-//   text,
-// }: {
-//   icon: React.FC;
-//   text: string;
-// }) => (
-//   <ListItem>
-//     <ListItemAvatar>
-//       <Icon />
-//     </ListItemAvatar>
-//     <ListItemText
-//       primary={text}
-//       primaryTypographyProps={{ color: "textSecondary", variant: "body2" }}
-//     />
-//   </ListItem>
-// );
-
 const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
@@ -67,18 +49,6 @@ const STEPS = [
   'Recovering your SIM-card'
 ];
 
-// const createListItem = ({ text }: { text: string }) => (
-//   <ListItem>
-//     <ListItemAvatar>
-//       <Icon />
-//     </ListItemAvatar>
-//     <ListItemText
-//       primary={text}
-//       primaryTypographyProps={{ color: "textSecondary", variant: "body2" }}
-//     />
-//   </ListItem>
-// );
-
 const PROGRESS_END = 100;
 
 export default function Repairing() {
@@ -107,7 +77,10 @@ export default function Repairing() {
     <Container className={classes.container}>
       <Grid container spacing={2}>
         <Grid item xs={12} style={{ textAlign: 'center' }}>
-          <Image src={progress !== 100 ? BugIcon : ReparedIcon} />
+          <Image
+            src={progress !== 100 ? BugIcon : ReparedIcon}
+            alt="Repairing"
+          />
         </Grid>
 
         <Grid item xs={12}>
@@ -125,25 +98,37 @@ export default function Repairing() {
             <List>
               <ListItem>
                 <ListItemAvatar>
-                  <Image src={progress < 24 ? ArrowClockwise : CheckIcon} />
+                  <Image
+                    src={progress < 24 ? ArrowClockwise : CheckIcon}
+                    alt="Recovering your battery"
+                  />
                 </ListItemAvatar>
                 <ListItemText primary="Recovering your battery" />
               </ListItem>
               <ListItem>
                 <ListItemAvatar>
-                  <Image src={progress < 46 ? ArrowClockwise : CheckIcon} />
+                  <Image
+                    src={progress < 46 ? ArrowClockwise : CheckIcon}
+                    alt="Recovering your battery"
+                  />
                 </ListItemAvatar>
                 <ListItemText primary="Recovering your contacts" />
               </ListItem>
               <ListItem>
                 <ListItemAvatar>
-                  <Image src={progress < 86 ? ArrowClockwise : CheckIcon} />
+                  <Image
+                    src={progress < 86 ? ArrowClockwise : CheckIcon}
+                    alt="Recovering your photos"
+                  />
                 </ListItemAvatar>
                 <ListItemText primary="Recovering your photos" />
               </ListItem>
               <ListItem>
                 <ListItemAvatar>
-                  <Image src={progress === 100 ? CheckIcon : ArrowClockwise} />
+                  <Image
+                    src={progress === 100 ? CheckIcon : ArrowClockwise}
+                    alt="Recovering your SIM-card"
+                  />
                 </ListItemAvatar>
                 <ListItemText primary="Recovering your SIM-card" />
               </ListItem>

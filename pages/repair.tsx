@@ -50,7 +50,7 @@ export default function Repair() {
       <div className={classes.wrapper}>
         <Grid container spacing={2}>
           <Grid item xs={12} style={{ textAlign: 'center' }}>
-            <Image src={BugIcon} />
+            <Image src={BugIcon} alt="Bugs found" />
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.paper} elevation={0}>
