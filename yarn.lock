@@ -322,19 +322,17 @@
     "@typescript-eslint/types" "4.28.3"
     eslint-visitor-keys "^2.0.0"
 
-"@zaruda/zetpay-core@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@zaruda/zetpay-core/-/zetpay-core-0.0.14.tgz#7764f8d4ba7b98cf336a67d8032e1fe9fcfeaec3"
-  integrity sha512-NsFfYLeNaH/D7K/hkS3agZGM6xbC1FNH/n5KLbdXH6x51i1iG1R2QcOQR1QWtAaYM/ImTBFRUHwjSfozWeb7RA==
+"@zaruda/zetpay-core@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@zaruda/zetpay-core/-/zetpay-core-0.0.18.tgz#9a8c83b2e419cd6c4c23263f8114f98c1dae9bce"
+  integrity sha512-/rc4QD5WRoJIPD0R4Sj6jX5CPti2qyLqImKhWKUK6ge769I5gf4gMGW9yufPlXm2Eo6LE6zcLXUzKoAnnSxLXg==
   dependencies:
     "@material-ui/core" "^4.12.1"
     "@material-ui/icons" "^4.11.2"
-    "@material-ui/utils" "^4.11.2"
     axios "^0.21.1"
     clsx "^1.1.1"
     date-fns "^2.23.0"
     formik "^2.2.9"
-    next "11.0.1"
     react-number-format "^4.7.3"
     yup "^0.32.9"
 
